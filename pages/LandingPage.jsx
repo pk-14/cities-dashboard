@@ -1,14 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import MapChart from "../components/MapChart";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="h-screen flex flex-col">
       <Navbar />
-      <div className="p-4">
-        <h2 className="text-lg font-semibold">Landing Page</h2>
-        {/* Map and City Widgets will go here */}
-      </div>
+      <MapChart className="flex-grow" />
     </div>
   );
 };
