@@ -1,0 +1,9 @@
+{
+  "historical": 6,
+  "forecast": 5,
+  "dataKeys": ["actual", "forecast"],
+  "toggles": {
+    "actual": true,
+    "forecast": true
+  }
+}

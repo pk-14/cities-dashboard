@@ -1,0 +1,5 @@
+{
+  "alignment": "left",
+  "maxVisible": 6,
+  "cities": ["New York", "Tokyo", "Berlin", "Dubai"]
+}
