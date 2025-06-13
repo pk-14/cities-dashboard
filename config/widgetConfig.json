@@ -1,5 +1,16 @@
 {
-  "alignment": "left",
-  "maxVisible": 6,
-  "cities": ["New York", "Tokyo", "Berlin", "Dubai"]
+  "alignment": "top",
+  "cities": [
+    "New York",
+    "Tokyo",
+    "Berlin",
+    "Dubai",
+    "San Francisco",
+    "Lagos",
+    "Bangalore",
+    "Paris",
+    "Sydney",
+    "Toronto",
+    "Shanghai"
+  ]
 }

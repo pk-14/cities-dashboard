@@ -11,39 +11,56 @@ import {
 import { feature } from "topojson-client";
 import { ZoomIn, ZoomOut } from "lucide-react";
 import { Tooltip } from "react-tooltip";
-import cityData from "../config/cityData.json";
 import "react-tooltip/dist/react-tooltip.css";
-
-const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+import cityData from "../config/cityData.json";
+import topoJson from "../config/countriesData.json";
 
 const MapChart = () => {
   const [geoData, setGeoData] = useState(null);
   const [zoom, setZoom] = useState(1);
+  const [showCities, setShowCities] = useState(false);
 
   useEffect(() => {
     const loadMap = async () => {
-      const res = await fetch(geoUrl);
-      const topoJson = await res.json();
       const countries = feature(topoJson, topoJson.objects.countries).features;
       setGeoData(countries);
     };
 
     loadMap();
 
-    const zoomTimer = setTimeout(() => setZoom(1.5), 300);
-    return () => clearTimeout(zoomTimer);
+    let currentZoom = 1;
+    const maxZoom = 1.5;
+    const step = 0.05;
+    const interval = setInterval(() => {
+      currentZoom += step;
+      setZoom((prev) => {
+        if (prev >= maxZoom) {
+          clearInterval(interval);
+          setShowCities(true);
+          return maxZoom;
+        }
+        return currentZoom;
+      });
+    }, 30);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="relative w-full h-[100vh] bg-[#0b1f2a] overflow-hidden">
       <ComposableMap
+        className="cursor-grab w-full h-full"
         projection="geoMercator"
         projectionConfig={{ scale: 150 }}
-        width={980}
-        height={520}
-        style={{ width: "100%", height: "100%" }}
       >
-        <ZoomableGroup zoom={zoom} center={[0, 20]}>
+        <ZoomableGroup
+          zoom={zoom}
+          center={[0, 20]}
+          translateExtent={[
+            [-1000, -500],
+            [1000, 800],
+          ]}
+        >
           {geoData && (
             <Geographies geography={{ features: geoData }}>
               {({ geographies }) =>
@@ -54,45 +71,43 @@ const MapChart = () => {
                     fill="#3b6e75"
                     stroke="#1a2e35"
                     strokeWidth={0.25}
-                    style={{
-                      default: { outline: "none" },
-                      hover: { outline: "none" },
-                      pressed: { outline: "none" },
-                    }}
+                    className="outline-none hover:outline-none focus:outline-none active:outline-none"
                   />
                 ))
               }
             </Geographies>
           )}
 
-          {cityData.map((city) => (
-            <Marker key={city.id} coordinates={city.coords}>
-              <circle
-                r={6}
-                fill="#f87171"
-                stroke="#ffffff"
-                strokeWidth={1}
-                data-tooltip-id="map-tooltip"
-                data-tooltip-content={`${city.name}: ${city.data.at(-1)}`}
-              />
-            </Marker>
-          ))}
+          {showCities &&
+            cityData.map((city) => (
+              <Marker key={city.id} coordinates={city.coords}>
+                <circle
+                  r={6 / zoom}
+                  fill="#f87171"
+                  stroke="#ffffff"
+                  strokeWidth={1 / zoom}
+                  tabIndex={-1}
+                  className="outline-none cursor-pointer"
+                  data-tooltip-id="map-tooltip"
+                  data-tooltip-content={`${city.name}: ${city.data.at(-1)}`}
+                />
+              </Marker>
+            ))}
         </ZoomableGroup>
       </ComposableMap>
 
-      <Tooltip id="map-tooltip" place="top" className="z-50" />
+      <Tooltip id="map-tooltip" place="top" className="z-50 text-sm" />
 
-      {/* Zoom Controls */}
-      <div className="absolute bottom-4 right-4 flex flex-col gap-2 z-20">
+      <div className="absolute bottom-20 right-4 flex gap-2 z-20">
         <button
           onClick={() => setZoom((prev) => Math.min(prev + 0.5, 4))}
-          className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-200"
+          className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-200 cursor-pointer"
         >
           <ZoomIn className="w-5 h-5" />
         </button>
         <button
           onClick={() => setZoom((prev) => Math.max(prev - 0.5, 1))}
-          className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-200"
+          className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-200 cursor-pointer"
         >
           <ZoomOut className="w-5 h-5" />
         </button>

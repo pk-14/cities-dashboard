@@ -16,6 +16,7 @@
     "react-dom": "^16.8.0 || 17.x || 18.x || 19.x",
     "react-simple-maps": "^3.0.0",
     "react-tooltip": "^5.29.0",
+    "recharts": "^2.15.3",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {

@@ -12,7 +12,7 @@ const Navbar = () => {
         <Globe className="w-5 h-5" />
         <div className="flex items-center gap-2">
           <User className="w-5 h-5" />
-          <span>John Doe</span>
+          <span>User</span>
         </div>
       </div>
     </nav>
