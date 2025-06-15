@@ -12,8 +12,8 @@ import { feature } from "topojson-client";
 import { ZoomIn, ZoomOut } from "lucide-react";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import cityData from "../config/cityData.json";
-import topoJson from "../config/countriesData.json";
+import cityData from "../../mock-data/cityData.json";
+import topoJson from "../../mock-data/countriesData.json";
 
 const MapChart = () => {
   const [geoData, setGeoData] = useState(null);

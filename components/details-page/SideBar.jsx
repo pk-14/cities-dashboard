@@ -1,0 +1,113 @@
+"use client";
+
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import { ArrowLeft, Filter, Mail } from "lucide-react";
+import mockSidebarData from "../../mock-data/sideBarData.json";
+
+const SideBar = ({ cityId, sidebarOpen }) => {
+  const statusTabs = ["BACKLOG", "PENDING", "FINAL SIGN-OFF"];
+  const router = useRouter();
+  const [selectedTab, setSelectedTab] = useState("BACKLOG");
+  const [selectedIds, setSelectedIds] = useState([]);
+
+  const filteredItems = mockSidebarData.filter(
+    (item) => item.status === selectedTab
+  );
+
+  const toggleSelect = (id) => {
+    setSelectedIds((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+    );
+  };
+
+  return (
+    <div
+      className={`transition-all duration-300 bg-[#0f2a35] border-r border-gray-700 overflow-y-auto ${
+        sidebarOpen ? "w-80" : "w-12"
+      }`}
+    >
+      {sidebarOpen && (
+        <>
+          <header className="p-4 flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => router.push("/")}
+                className="px-3 py-1 rounded text-sm cursor-pointer"
+              >
+                <ArrowLeft />
+              </button>
+              <h1 className="text-xl font-semibold">Sample Stack</h1>
+            </div>
+          </header>
+
+          <div className="p-2">
+            <div className="flex justify-between items-center mb-2 border-b border-gray-600">
+              <div className="flex gap-4 uppercase mt-2">
+                {statusTabs.map((tab) => (
+                  <button
+                    key={tab}
+                    onClick={() => setSelectedTab(tab)}
+                    className={`flex gap-2 cursor-pointer ${
+                      selectedTab === tab
+                        ? "text-cyan-400 border-b-2 border-cyan-400 pb-2"
+                        : "text-gray-400"
+                    }`}
+                  >
+                    <p className="font-bold text-[10px]">{tab}</p>
+                    <p className="text-gray-400 text-[10px]">
+                      ({mockSidebarData.filter((d) => d.status === tab).length})
+                    </p>
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="flex gap-2 text-sm font-bold text-cyan-300 mb-1 text-[12px]">
+              Filter
+              <Filter className="w-4 h-4 text-cyan-400" title="Filter" />
+            </div>
+          </div>
+
+          <div className="px-2 py-1 space-y-2">
+            {filteredItems.map((item) => (
+              <div
+                key={item.id}
+                className={`relative flex gap-2 items-start border border-black hover:border-cyan-400 rounded p-2 text-sm bg-white/5 ${
+                  selectedIds.includes(item.id)
+                    ? "border-cyan-400 bg-white/10"
+                    : ""
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={selectedIds.includes(item.id)}
+                  onChange={() => toggleSelect(item.id)}
+                  className="form-checkbox mt-1 h-4 w-4 text-cyan-400 bg-gray-800 border-gray-600 rounded focus:ring-0"
+                />
+                <div className="flex-1">
+                  <div className="flex gap-2 mb-1 flex-wrap">
+                    {item.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="bg-gray-700 px-2 py-0.5 rounded text-xs text-white"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div>{item.name}</div>
+                </div>
+                <Mail
+                  className="absolute top-2 right-2 w-4 h-4 text-cyan-400 hover:text-cyan-300"
+                  title="Send Email"
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
+
+export default SideBar;

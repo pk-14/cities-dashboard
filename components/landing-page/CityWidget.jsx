@@ -2,12 +2,42 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { LineChart, Line, ResponsiveContainer } from "recharts";
+import {
+  LineChart,
+  Line,
+  ResponsiveContainer,
+  Tooltip as RechartsTooltip,
+} from "recharts";
+
+const CustomTooltip = ({ active, payload, label, coordinate }) => {
+  if (active && payload && payload.length && coordinate) {
+    return (
+      <div
+        className="bg-black/80 text-white text-xs p-1 rounded shadow-md"
+        style={{
+          position: "absolute",
+          top: coordinate.y - 10,
+          left: coordinate.x,
+          transform: "translate(-50%, -100%)",
+          pointerEvents: "none",
+          whiteSpace: "nowrap",
+          zIndex: 50,
+        }}
+      >
+        Quarter {label + 1}: {Number(payload[0].value).toFixed(2)}
+      </div>
+    );
+  }
+  return null;
+};
 
 const CityWidget = ({ city }) => {
   const router = useRouter();
 
   const chartData = city.data.map((value, index) => ({ x: index, value }));
+  const forecastTrend =
+    city.forecastTrend ||
+    city.data.map((v, i) => ({ x: i, value: v + Math.random() * 10 - 5 }));
   const forecast = city.forecast || Math.floor(Math.random() * 100) + 1;
   const trendUp = chartData.at(-1).value >= chartData[0].value;
 
@@ -30,14 +60,13 @@ const CityWidget = ({ city }) => {
             pointer-events: none;
           }
 
-          /* Custom scrollbar */
           ::-webkit-scrollbar {
-            height: 4px;
-            width: 4px;
+            height: 8px;
+            width: 8px;
           }
 
           ::-webkit-scrollbar-thumb {
-            background: #00ff87;
+            background: linear-gradient(45deg, #4a00e0, #00ff87);
             border-radius: 8px;
           }
 
@@ -45,7 +74,6 @@ const CityWidget = ({ city }) => {
             background: transparent;
           }
 
-          /* Firefox */
           * {
             scrollbar-width: thin;
             scrollbar-color: #00ff87 transparent;
@@ -70,8 +98,12 @@ const CityWidget = ({ city }) => {
             <ResponsiveContainer width="100%" height={30}>
               <LineChart
                 data={chartData}
-                margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+                margin={{ top: 20, right: 10, left: 10, bottom: 0 }}
               >
+                <RechartsTooltip
+                  content={<CustomTooltip />}
+                  cursor={{ stroke: "transparent" }}
+                />
                 <Line
                   type="monotone"
                   dataKey="value"
@@ -92,18 +124,22 @@ const CityWidget = ({ city }) => {
         </div>
 
         <div className="flex flex-col gap-2 mt-2">
-          <div className="text-xs text-gray-300">Forecast</div>
+          <div className="text-xs text-gray-300">Forecast Trend</div>
           <div className="flex gap-4 items-center">
             <div className="text-base font-bold text-white">{forecast}%</div>
             <ResponsiveContainer width="100%" height={30}>
               <LineChart
-                data={chartData}
-                margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+                data={forecastTrend}
+                margin={{ top: 20, right: 10, left: 10, bottom: 0 }}
               >
+                <RechartsTooltip
+                  content={<CustomTooltip />}
+                  cursor={{ stroke: "transparent" }}
+                />
                 <Line
                   type="monotone"
                   dataKey="value"
-                  stroke="#60a5fa"
+                  stroke="#38bdf8"
                   strokeWidth={2}
                   dot={false}
                 />

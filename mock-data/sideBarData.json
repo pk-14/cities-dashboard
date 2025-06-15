@@ -1,0 +1,58 @@
+[
+  {
+    "id": "stack-1",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": true,
+    "status": "BACKLOG"
+  },
+  {
+    "id": "stack-2",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": false,
+    "status": "BACKLOG"
+  },
+  {
+    "id": "stack-3",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": false,
+    "status": "PENDING"
+  },
+  {
+    "id": "stack-4",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": false,
+    "status": "PENDING"
+  },
+  {
+    "id": "stack-5",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": false,
+    "status": "FINAL SIGN-OFF"
+  },
+  {
+    "id": "stack-6",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": false,
+    "status": "FINAL SIGN-OFF"
+  },
+  {
+    "id": "stack-7",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": false,
+    "status": "BACKLOG"
+  },
+  {
+    "id": "stack-8",
+    "name": "Sample Stack",
+    "tags": ["F'CAST STAB.", "F'CAST ACC."],
+    "selected": false,
+    "status": "PENDING"
+  }
+]

@@ -1,5 +1,9 @@
-import DetailPage from "../../../pages/DetailPage";
+"use client";
 
-export default function DetailsPageWrapper({ params }) {
-  return <DetailPage cityId={params.cityId} />;
+import DetailsPage from "../../../components/details-page/DetailsPage";
+import { useParams } from "next/navigation";
+
+export default function DetailsPageWrapper() {
+  const { cityId } = useParams();
+  return <DetailsPage cityId={cityId} />;
 }
