@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft, Filter, Mail } from "lucide-react";
 import mockSidebarData from "../../mock-data/sideBarData.json";
 
-const SideBar = ({ cityId, sidebarOpen }) => {
+const SideBar = ({ cityId, sidebarOpen, onItemSelect }) => {
   const statusTabs = ["BACKLOG", "PENDING", "FINAL SIGN-OFF"];
   const router = useRouter();
   const [selectedTab, setSelectedTab] = useState("BACKLOG");
   const [selectedIds, setSelectedIds] = useState([]);
+  const [selectedItemId, setSelectedItemId] = useState(null);
 
   const filteredItems = mockSidebarData.filter(
     (item) => item.status === selectedTab
@@ -19,6 +20,14 @@ const SideBar = ({ cityId, sidebarOpen }) => {
     setSelectedIds((prev) =>
       prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
     );
+  };
+
+  const handleItemClick = (id) => {
+    setSelectedItemId(id);
+    const clickedItem = mockSidebarData.find((item) => item.id === id);
+    if (clickedItem && onItemSelect) {
+      onItemSelect(clickedItem.chartData, clickedItem);
+    }
   };
 
   return (
@@ -72,8 +81,9 @@ const SideBar = ({ cityId, sidebarOpen }) => {
             {filteredItems.map((item) => (
               <div
                 key={item.id}
-                className={`relative flex gap-2 items-start border border-black hover:border-cyan-400 rounded p-2 text-sm bg-white/5 ${
-                  selectedIds.includes(item.id)
+                onClick={() => handleItemClick(item.id)}
+                className={`relative flex gap-2 items-start border border-black hover:border-cyan-400 rounded p-2 text-sm bg-white/5 cursor-pointer transition-all duration-200 ${
+                  selectedItemId === item.id
                     ? "border-cyan-400 bg-white/10"
                     : ""
                 }`}
@@ -81,7 +91,10 @@ const SideBar = ({ cityId, sidebarOpen }) => {
                 <input
                   type="checkbox"
                   checked={selectedIds.includes(item.id)}
-                  onChange={() => toggleSelect(item.id)}
+                  onChange={(e) => {
+                    e.stopPropagation();
+                    toggleSelect(item.id);
+                  }}
                   className="form-checkbox mt-1 h-4 w-4 text-cyan-400 bg-gray-800 border-gray-600 rounded focus:ring-0"
                 />
                 <div className="flex-1">
