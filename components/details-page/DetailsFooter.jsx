@@ -4,7 +4,6 @@ const DetailsFooter = ({ chartData }) => {
   const historicalData = chartData.historical;
   const forecastData = chartData.forecast;
 
-  // Combine historical and forecast data
   const allQuarters = [...historicalData, ...forecastData];
 
   const tableData = [

@@ -1,20 +1,27 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Filter, Mail } from "lucide-react";
-import mockSidebarData from "../../mock-data/sideBarData.json";
 
-const SideBar = ({ cityId, sidebarOpen, onItemSelect }) => {
+const SideBar = ({ sidebarOpen, onItemSelect, cityData }) => {
   const statusTabs = ["BACKLOG", "PENDING", "FINAL SIGN-OFF"];
   const router = useRouter();
   const [selectedTab, setSelectedTab] = useState("BACKLOG");
   const [selectedIds, setSelectedIds] = useState([]);
   const [selectedItemId, setSelectedItemId] = useState(null);
 
-  const filteredItems = mockSidebarData.filter(
-    (item) => item.status === selectedTab
-  );
+  const filteredItems = cityData.filter((item) => item.status === selectedTab);
+
+  useEffect(() => {
+    if (filteredItems.length > 0 && !selectedItemId) {
+      const firstItem = filteredItems[0];
+      setSelectedItemId(firstItem.id);
+      if (onItemSelect) {
+        onItemSelect(firstItem.chartData, firstItem);
+      }
+    }
+  }, [filteredItems, selectedItemId, onItemSelect]);
 
   const toggleSelect = (id) => {
     setSelectedIds((prev) =>
@@ -24,7 +31,7 @@ const SideBar = ({ cityId, sidebarOpen, onItemSelect }) => {
 
   const handleItemClick = (id) => {
     setSelectedItemId(id);
-    const clickedItem = mockSidebarData.find((item) => item.id === id);
+    const clickedItem = cityData.find((item) => item.id === id);
     if (clickedItem && onItemSelect) {
       onItemSelect(clickedItem.chartData, clickedItem);
     }
@@ -65,7 +72,7 @@ const SideBar = ({ cityId, sidebarOpen, onItemSelect }) => {
                   >
                     <p className="font-bold text-[10px]">{tab}</p>
                     <p className="text-gray-400 text-[10px]">
-                      ({mockSidebarData.filter((d) => d.status === tab).length})
+                      ({cityData.filter((d) => d.status === tab).length})
                     </p>
                   </button>
                 ))}
@@ -102,8 +109,13 @@ const SideBar = ({ cityId, sidebarOpen, onItemSelect }) => {
                     {item.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="bg-gray-700 px-2 py-0.5 rounded text-xs text-white"
+                        className="inline-flex items-center border border-black bg-white text-black font-bold uppercase text-xs px-2 py-0.5 rounded-sm"
+                        style={{
+                          fontFamily: "Arial Narrow, Arial, sans-serif",
+                          letterSpacing: "0.02em",
+                        }}
                       >
+                        <span className="mr-1">↑</span>
                         {tag}
                       </span>
                     ))}

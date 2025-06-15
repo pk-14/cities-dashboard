@@ -7,22 +7,29 @@ import SideBar from "./SideBar";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import DetailsHeader from "./DetailsHeader";
 import DetailsFooter from "./DetailsFooter";
-import mockSidebarData from "../../mock-data/sideBarData.json";
+import cityStackedData from "../../mock-data/cityData.json";
 
 const DetailsPage = () => {
   const { cityId } = useParams();
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedChartData, setSelectedChartData] = useState(null);
   const [selectedStack, setSelectedStack] = useState(null);
+  const [cityStacks, setCityStacks] = useState([]);
 
-  // Set initial data from the first item
   useEffect(() => {
-    const firstItem = mockSidebarData[0];
-    if (firstItem) {
-      setSelectedChartData(firstItem.chartData);
-      setSelectedStack(firstItem);
+    let cityData;
+    cityStackedData.map((city) => {
+      if (city.id === cityId) {
+        cityData = city;
+      }
+    });
+    if (cityData?.stacks?.length > 0) {
+      const firstStack = cityData.stacks[0];
+      setCityStacks(cityData.stacks);
+      setSelectedChartData(firstStack.chartData);
+      setSelectedStack(firstStack);
     }
-  }, []);
+  }, [cityId]);
 
   const handleItemSelect = (chartData, stack) => {
     setSelectedChartData(chartData);
@@ -35,6 +42,7 @@ const DetailsPage = () => {
         <SideBar
           cityId={cityId}
           sidebarOpen={sidebarOpen}
+          cityData={cityStacks}
           onItemSelect={handleItemSelect}
         />
         <button

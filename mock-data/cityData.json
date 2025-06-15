@@ -4,76 +4,1700 @@
     "name": "New York",
     "coords": [-74.006, 40.7128],
     "data": [120, 160, 110, 170, 105, 180],
-    "forecast": 65
+    "forecast": 65,
+    "stacks": [
+      {
+        "id": "ny-stack-1",
+        "name": "Manhattan Region Stack",
+        "stackId": "NY-MH-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 89,
+          "forecastStability": 92
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 120, "final": 130, "consumption": 125 },
+            { "name": "Q3 2022", "ai": 115, "final": 125, "consumption": 120 },
+            { "name": "Q4 2022", "ai": 125, "final": 130, "consumption": 128 },
+            { "name": "Q1 2023", "ai": 120, "final": 110, "consumption": 115 },
+            { "name": "Q2 2023", "ai": 130, "final": 120, "consumption": 125 },
+            { "name": "Q3 2023", "ai": 135, "final": 130, "consumption": 132 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 130, "final": 125, "previous": 120 },
+            { "name": "Q1 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q2 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q3 2024", "ai": 135, "final": 140, "previous": 135 },
+            { "name": "Q4 2024", "ai": 140, "final": 145, "previous": 140 },
+            { "name": "Q1 2025", "ai": 145, "final": 150, "previous": 145 }
+          ]
+        }
+      },
+      {
+        "id": "ny-stack-2",
+        "name": "Brooklyn Region Stack",
+        "stackId": "NY-BK-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 85,
+          "forecastStability": 88
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 110, "final": 120, "consumption": 115 },
+            { "name": "Q3 2022", "ai": 105, "final": 115, "consumption": 110 },
+            { "name": "Q4 2022", "ai": 115, "final": 120, "consumption": 118 },
+            { "name": "Q1 2023", "ai": 110, "final": 100, "consumption": 105 },
+            { "name": "Q2 2023", "ai": 120, "final": 110, "consumption": 115 },
+            { "name": "Q3 2023", "ai": 125, "final": 120, "consumption": 122 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 120, "final": 115, "previous": 110 },
+            { "name": "Q1 2024", "ai": 115, "final": 120, "previous": 115 },
+            { "name": "Q2 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q3 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q4 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q1 2025", "ai": 135, "final": 140, "previous": 135 }
+          ]
+        }
+      },
+      {
+        "id": "ny-stack-3",
+        "name": "Queens Region Stack",
+        "stackId": "NY-QN-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 91,
+          "forecastStability": 94
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 115, "final": 125, "consumption": 120 },
+            { "name": "Q3 2022", "ai": 110, "final": 120, "consumption": 115 },
+            { "name": "Q4 2022", "ai": 120, "final": 125, "consumption": 123 },
+            { "name": "Q1 2023", "ai": 115, "final": 105, "consumption": 110 },
+            { "name": "Q2 2023", "ai": 125, "final": 115, "consumption": 120 },
+            { "name": "Q3 2023", "ai": 130, "final": 125, "consumption": 127 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 125, "final": 120, "previous": 115 },
+            { "name": "Q1 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q2 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q3 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q4 2024", "ai": 135, "final": 140, "previous": 135 },
+            { "name": "Q1 2025", "ai": 140, "final": 145, "previous": 140 }
+          ]
+        }
+      },
+      {
+        "id": "ny-stack-4",
+        "name": "Bronx Region Stack",
+        "stackId": "NY-BX-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 87,
+          "forecastStability": 90
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 105, "final": 115, "consumption": 110 },
+            { "name": "Q3 2022", "ai": 100, "final": 110, "consumption": 105 },
+            { "name": "Q4 2022", "ai": 110, "final": 115, "consumption": 113 },
+            { "name": "Q1 2023", "ai": 105, "final": 95, "consumption": 100 },
+            { "name": "Q2 2023", "ai": 115, "final": 105, "consumption": 110 },
+            { "name": "Q3 2023", "ai": 120, "final": 115, "consumption": 117 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 115, "final": 110, "previous": 105 },
+            { "name": "Q1 2024", "ai": 110, "final": 115, "previous": 110 },
+            { "name": "Q2 2024", "ai": 115, "final": 120, "previous": 115 },
+            { "name": "Q3 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q4 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q1 2025", "ai": 130, "final": 135, "previous": 130 }
+          ]
+        }
+      },
+      {
+        "id": "ny-stack-5",
+        "name": "Staten Island Region Stack",
+        "stackId": "NY-SI-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 86,
+          "forecastStability": 89
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 100, "final": 110, "consumption": 105 },
+            { "name": "Q3 2022", "ai": 95, "final": 105, "consumption": 100 },
+            { "name": "Q4 2022", "ai": 105, "final": 110, "consumption": 108 },
+            { "name": "Q1 2023", "ai": 100, "final": 90, "consumption": 95 },
+            { "name": "Q2 2023", "ai": 110, "final": 100, "consumption": 105 },
+            { "name": "Q3 2023", "ai": 115, "final": 110, "consumption": 112 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 110, "final": 105, "previous": 100 },
+            { "name": "Q1 2024", "ai": 105, "final": 110, "previous": 105 },
+            { "name": "Q2 2024", "ai": 110, "final": 115, "previous": 110 },
+            { "name": "Q3 2024", "ai": 115, "final": 120, "previous": 115 },
+            { "name": "Q4 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q1 2025", "ai": 125, "final": 130, "previous": 125 }
+          ]
+        }
+      },
+      {
+        "id": "ny-stack-6",
+        "name": "Long Island Region Stack",
+        "stackId": "NY-LI-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 93,
+          "forecastStability": 96
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 125, "final": 135, "consumption": 130 },
+            { "name": "Q3 2022", "ai": 120, "final": 130, "consumption": 125 },
+            { "name": "Q4 2022", "ai": 130, "final": 135, "consumption": 133 },
+            { "name": "Q1 2023", "ai": 125, "final": 115, "consumption": 120 },
+            { "name": "Q2 2023", "ai": 135, "final": 125, "consumption": 130 },
+            { "name": "Q3 2023", "ai": 140, "final": 135, "consumption": 137 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 135, "final": 130, "previous": 125 },
+            { "name": "Q1 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q2 2024", "ai": 135, "final": 140, "previous": 135 },
+            { "name": "Q3 2024", "ai": 140, "final": 145, "previous": 140 },
+            { "name": "Q4 2024", "ai": 145, "final": 150, "previous": 145 },
+            { "name": "Q1 2025", "ai": 150, "final": 155, "previous": 150 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "tokyo",
     "name": "Tokyo",
     "coords": [139.6917, 35.6895],
     "data": [110, 150, 105, 155, 100, 160],
-    "forecast": 62
-  },
-  {
-    "id": "berlin",
-    "name": "Berlin",
-    "coords": [13.405, 52.52],
-    "data": [500, 580, 490, 600, 480, 620],
-    "forecast": 56
-  },
-  {
-    "id": "dubai",
-    "name": "Dubai",
-    "coords": [55.2708, 25.2048],
-    "data": [450, 520, 430, 540, 420, 560],
-    "forecast": 23
+    "forecast": 62,
+    "stacks": [
+      {
+        "id": "tokyo-stack-1",
+        "name": "Shinjuku Region Stack",
+        "stackId": "TK-SJ-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 92,
+          "forecastStability": 95
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 110, "final": 120, "consumption": 115 },
+            { "name": "Q3 2022", "ai": 105, "final": 115, "consumption": 110 },
+            { "name": "Q4 2022", "ai": 115, "final": 120, "consumption": 118 },
+            { "name": "Q1 2023", "ai": 110, "final": 100, "consumption": 105 },
+            { "name": "Q2 2023", "ai": 120, "final": 110, "consumption": 115 },
+            { "name": "Q3 2023", "ai": 125, "final": 120, "consumption": 122 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 120, "final": 115, "previous": 110 },
+            { "name": "Q1 2024", "ai": 115, "final": 120, "previous": 115 },
+            { "name": "Q2 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q3 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q4 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q1 2025", "ai": 135, "final": 140, "previous": 135 }
+          ]
+        }
+      },
+      {
+        "id": "tokyo-stack-2",
+        "name": "Shibuya Region Stack",
+        "stackId": "TK-SB-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 88,
+          "forecastStability": 91
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 115, "final": 125, "consumption": 120 },
+            { "name": "Q3 2022", "ai": 110, "final": 120, "consumption": 115 },
+            { "name": "Q4 2022", "ai": 120, "final": 125, "consumption": 123 },
+            { "name": "Q1 2023", "ai": 115, "final": 105, "consumption": 110 },
+            { "name": "Q2 2023", "ai": 125, "final": 115, "consumption": 120 },
+            { "name": "Q3 2023", "ai": 130, "final": 125, "consumption": 127 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 125, "final": 120, "previous": 115 },
+            { "name": "Q1 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q2 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q3 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q4 2024", "ai": 135, "final": 140, "previous": 135 },
+            { "name": "Q1 2025", "ai": 140, "final": 145, "previous": 140 }
+          ]
+        }
+      },
+      {
+        "id": "tokyo-stack-3",
+        "name": "Ginza Region Stack",
+        "stackId": "TK-GZ-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 94,
+          "forecastStability": 97
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 120, "final": 130, "consumption": 125 },
+            { "name": "Q3 2022", "ai": 115, "final": 125, "consumption": 120 },
+            { "name": "Q4 2022", "ai": 125, "final": 130, "consumption": 128 },
+            { "name": "Q1 2023", "ai": 120, "final": 110, "consumption": 115 },
+            { "name": "Q2 2023", "ai": 130, "final": 120, "consumption": 125 },
+            { "name": "Q3 2023", "ai": 135, "final": 130, "consumption": 132 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 130, "final": 125, "previous": 120 },
+            { "name": "Q1 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q2 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q3 2024", "ai": 135, "final": 140, "previous": 135 },
+            { "name": "Q4 2024", "ai": 140, "final": 145, "previous": 140 },
+            { "name": "Q1 2025", "ai": 145, "final": 150, "previous": 145 }
+          ]
+        }
+      },
+      {
+        "id": "tokyo-stack-4",
+        "name": "Roppongi Region Stack",
+        "stackId": "TK-RP-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 89,
+          "forecastStability": 92
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 105, "final": 115, "consumption": 110 },
+            { "name": "Q3 2022", "ai": 100, "final": 110, "consumption": 105 },
+            { "name": "Q4 2022", "ai": 110, "final": 115, "consumption": 113 },
+            { "name": "Q1 2023", "ai": 105, "final": 95, "consumption": 100 },
+            { "name": "Q2 2023", "ai": 115, "final": 105, "consumption": 110 },
+            { "name": "Q3 2023", "ai": 120, "final": 115, "consumption": 117 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 115, "final": 110, "previous": 105 },
+            { "name": "Q1 2024", "ai": 110, "final": 115, "previous": 110 },
+            { "name": "Q2 2024", "ai": 115, "final": 120, "previous": 115 },
+            { "name": "Q3 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q4 2024", "ai": 125, "final": 130, "previous": 125 },
+            { "name": "Q1 2025", "ai": 130, "final": 135, "previous": 130 }
+          ]
+        }
+      },
+      {
+        "id": "tokyo-stack-5",
+        "name": "Akihabara Region Stack",
+        "stackId": "TK-AK-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 87,
+          "forecastStability": 90
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 100, "final": 110, "consumption": 105 },
+            { "name": "Q3 2022", "ai": 95, "final": 105, "consumption": 100 },
+            { "name": "Q4 2022", "ai": 105, "final": 110, "consumption": 108 },
+            { "name": "Q1 2023", "ai": 100, "final": 90, "consumption": 95 },
+            { "name": "Q2 2023", "ai": 110, "final": 100, "consumption": 105 },
+            { "name": "Q3 2023", "ai": 115, "final": 110, "consumption": 112 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 110, "final": 105, "previous": 100 },
+            { "name": "Q1 2024", "ai": 105, "final": 110, "previous": 105 },
+            { "name": "Q2 2024", "ai": 110, "final": 115, "previous": 110 },
+            { "name": "Q3 2024", "ai": 115, "final": 120, "previous": 115 },
+            { "name": "Q4 2024", "ai": 120, "final": 125, "previous": 120 },
+            { "name": "Q1 2025", "ai": 125, "final": 130, "previous": 125 }
+          ]
+        }
+      },
+      {
+        "id": "tokyo-stack-6",
+        "name": "Harajuku Region Stack",
+        "stackId": "TK-HJ-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 93,
+          "forecastStability": 96
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 125, "final": 135, "consumption": 130 },
+            { "name": "Q3 2022", "ai": 120, "final": 130, "consumption": 125 },
+            { "name": "Q4 2022", "ai": 130, "final": 135, "consumption": 133 },
+            { "name": "Q1 2023", "ai": 125, "final": 115, "consumption": 120 },
+            { "name": "Q2 2023", "ai": 135, "final": 125, "consumption": 130 },
+            { "name": "Q3 2023", "ai": 140, "final": 135, "consumption": 137 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 135, "final": 130, "previous": 125 },
+            { "name": "Q1 2024", "ai": 130, "final": 135, "previous": 130 },
+            { "name": "Q2 2024", "ai": 135, "final": 140, "previous": 135 },
+            { "name": "Q3 2024", "ai": 140, "final": 145, "previous": 140 },
+            { "name": "Q4 2024", "ai": 145, "final": 150, "previous": 145 },
+            { "name": "Q1 2025", "ai": 150, "final": 155, "previous": 150 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "sf",
     "name": "San Francisco",
     "coords": [-122.4194, 37.7749],
     "data": [20, 35, 18, 38, 16, 40],
-    "forecast": 85
+    "forecast": 85,
+    "stacks": [
+      {
+        "id": "sf-stack-1",
+        "name": "Financial District Stack",
+        "stackId": "SF-FD-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 89,
+          "forecastStability": 92
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 20, "final": 22, "consumption": 21 },
+            { "name": "Q3 2022", "ai": 19, "final": 21, "consumption": 20 },
+            { "name": "Q4 2022", "ai": 21, "final": 22, "consumption": 21.5 },
+            { "name": "Q1 2023", "ai": 20, "final": 18, "consumption": 19 },
+            { "name": "Q2 2023", "ai": 22, "final": 20, "consumption": 21 },
+            { "name": "Q3 2023", "ai": 23, "final": 22, "consumption": 22.5 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 22, "final": 21, "previous": 20 },
+            { "name": "Q1 2024", "ai": 21, "final": 22, "previous": 21 },
+            { "name": "Q2 2024", "ai": 22, "final": 23, "previous": 22 },
+            { "name": "Q3 2024", "ai": 23, "final": 24, "previous": 23 },
+            { "name": "Q4 2024", "ai": 24, "final": 25, "previous": 24 },
+            { "name": "Q1 2025", "ai": 25, "final": 26, "previous": 25 }
+          ]
+        }
+      },
+      {
+        "id": "sf-stack-2",
+        "name": "Mission District Stack",
+        "stackId": "SF-MD-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 87,
+          "forecastStability": 90
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 18, "final": 20, "consumption": 19 },
+            { "name": "Q3 2022", "ai": 17, "final": 19, "consumption": 18 },
+            { "name": "Q4 2022", "ai": 19, "final": 20, "consumption": 19.5 },
+            { "name": "Q1 2023", "ai": 18, "final": 16, "consumption": 17 },
+            { "name": "Q2 2023", "ai": 20, "final": 18, "consumption": 19 },
+            { "name": "Q3 2023", "ai": 21, "final": 20, "consumption": 20.5 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 20, "final": 19, "previous": 18 },
+            { "name": "Q1 2024", "ai": 19, "final": 20, "previous": 19 },
+            { "name": "Q2 2024", "ai": 20, "final": 21, "previous": 20 },
+            { "name": "Q3 2024", "ai": 21, "final": 22, "previous": 21 },
+            { "name": "Q4 2024", "ai": 22, "final": 23, "previous": 22 },
+            { "name": "Q1 2025", "ai": 23, "final": 24, "previous": 23 }
+          ]
+        }
+      },
+      {
+        "id": "sf-stack-3",
+        "name": "SOMA District Stack",
+        "stackId": "SF-SM-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 93,
+          "forecastStability": 96
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 22, "final": 24, "consumption": 23 },
+            { "name": "Q3 2022", "ai": 21, "final": 23, "consumption": 22 },
+            { "name": "Q4 2022", "ai": 23, "final": 24, "consumption": 23.5 },
+            { "name": "Q1 2023", "ai": 22, "final": 20, "consumption": 21 },
+            { "name": "Q2 2023", "ai": 24, "final": 22, "consumption": 23 },
+            { "name": "Q3 2023", "ai": 25, "final": 24, "consumption": 24.5 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 24, "final": 23, "previous": 22 },
+            { "name": "Q1 2024", "ai": 23, "final": 24, "previous": 23 },
+            { "name": "Q2 2024", "ai": 24, "final": 25, "previous": 24 },
+            { "name": "Q3 2024", "ai": 25, "final": 26, "previous": 25 },
+            { "name": "Q4 2024", "ai": 26, "final": 27, "previous": 26 },
+            { "name": "Q1 2025", "ai": 27, "final": 28, "previous": 27 }
+          ]
+        }
+      },
+      {
+        "id": "sf-stack-4",
+        "name": "Marina District Stack",
+        "stackId": "SF-MN-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 88,
+          "forecastStability": 91
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 19, "final": 21, "consumption": 20 },
+            { "name": "Q3 2022", "ai": 18, "final": 20, "consumption": 19 },
+            { "name": "Q4 2022", "ai": 20, "final": 21, "consumption": 20.5 },
+            { "name": "Q1 2023", "ai": 19, "final": 17, "consumption": 18 },
+            { "name": "Q2 2023", "ai": 21, "final": 19, "consumption": 20 },
+            { "name": "Q3 2023", "ai": 22, "final": 21, "consumption": 21.5 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 21, "final": 20, "previous": 19 },
+            { "name": "Q1 2024", "ai": 20, "final": 21, "previous": 20 },
+            { "name": "Q2 2024", "ai": 21, "final": 22, "previous": 21 },
+            { "name": "Q3 2024", "ai": 22, "final": 23, "previous": 22 },
+            { "name": "Q4 2024", "ai": 23, "final": 24, "previous": 23 },
+            { "name": "Q1 2025", "ai": 24, "final": 25, "previous": 24 }
+          ]
+        }
+      },
+      {
+        "id": "sf-stack-5",
+        "name": "Hayes Valley Stack",
+        "stackId": "SF-HV-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 86,
+          "forecastStability": 89
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 17, "final": 19, "consumption": 18 },
+            { "name": "Q3 2022", "ai": 16, "final": 18, "consumption": 17 },
+            { "name": "Q4 2022", "ai": 18, "final": 19, "consumption": 18.5 },
+            { "name": "Q1 2023", "ai": 17, "final": 15, "consumption": 16 },
+            { "name": "Q2 2023", "ai": 19, "final": 17, "consumption": 18 },
+            { "name": "Q3 2023", "ai": 20, "final": 19, "consumption": 19.5 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 19, "final": 18, "previous": 17 },
+            { "name": "Q1 2024", "ai": 18, "final": 19, "previous": 18 },
+            { "name": "Q2 2024", "ai": 19, "final": 20, "previous": 19 },
+            { "name": "Q3 2024", "ai": 20, "final": 21, "previous": 20 },
+            { "name": "Q4 2024", "ai": 21, "final": 22, "previous": 21 },
+            { "name": "Q1 2025", "ai": 22, "final": 23, "previous": 22 }
+          ]
+        }
+      },
+      {
+        "id": "sf-stack-6",
+        "name": "North Beach Stack",
+        "stackId": "SF-NB-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 92,
+          "forecastStability": 95
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 21, "final": 23, "consumption": 22 },
+            { "name": "Q3 2022", "ai": 20, "final": 22, "consumption": 21 },
+            { "name": "Q4 2022", "ai": 22, "final": 23, "consumption": 22.5 },
+            { "name": "Q1 2023", "ai": 21, "final": 19, "consumption": 20 },
+            { "name": "Q2 2023", "ai": 23, "final": 21, "consumption": 22 },
+            { "name": "Q3 2023", "ai": 24, "final": 23, "consumption": 23.5 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 23, "final": 22, "previous": 21 },
+            { "name": "Q1 2024", "ai": 22, "final": 23, "previous": 22 },
+            { "name": "Q2 2024", "ai": 23, "final": 24, "previous": 23 },
+            { "name": "Q3 2024", "ai": 24, "final": 25, "previous": 24 },
+            { "name": "Q4 2024", "ai": 25, "final": 26, "previous": 25 },
+            { "name": "Q1 2025", "ai": 26, "final": 27, "previous": 26 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "lagos",
     "name": "Lagos",
     "coords": [3.3792, 6.5244],
     "data": [700, 780, 690, 800, 680, 820],
-    "forecast": 39
+    "forecast": 39,
+    "stacks": [
+      {
+        "id": "lagos-stack-1",
+        "name": "Victoria Island Stack",
+        "stackId": "LG-VI-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 88,
+          "forecastStability": 91
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q3 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q4 2022", "ai": 710, "final": 720, "consumption": 715 },
+            { "name": "Q1 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q2 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q3 2023", "ai": 730, "final": 720, "consumption": 725 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 720, "final": 710, "previous": 700 },
+            { "name": "Q1 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q2 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q3 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q4 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q1 2025", "ai": 750, "final": 760, "previous": 750 }
+          ]
+        }
+      },
+      {
+        "id": "lagos-stack-2",
+        "name": "Ikoyi Stack",
+        "stackId": "LG-IK-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 86,
+          "forecastStability": 89
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q3 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q4 2022", "ai": 700, "final": 710, "consumption": 705 },
+            { "name": "Q1 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q2 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q3 2023", "ai": 720, "final": 710, "consumption": 715 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 710, "final": 700, "previous": 690 },
+            { "name": "Q1 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q2 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q3 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q4 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q1 2025", "ai": 740, "final": 750, "previous": 740 }
+          ]
+        }
+      },
+      {
+        "id": "lagos-stack-3",
+        "name": "Lekki Stack",
+        "stackId": "LG-LK-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 92,
+          "forecastStability": 95
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 710, "final": 730, "consumption": 720 },
+            { "name": "Q3 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q4 2022", "ai": 720, "final": 730, "consumption": 725 },
+            { "name": "Q1 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q2 2023", "ai": 730, "final": 710, "consumption": 720 },
+            { "name": "Q3 2023", "ai": 740, "final": 730, "consumption": 735 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 730, "final": 720, "previous": 710 },
+            { "name": "Q1 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q2 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q3 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q4 2024", "ai": 750, "final": 760, "previous": 750 },
+            { "name": "Q1 2025", "ai": 760, "final": 770, "previous": 760 }
+          ]
+        }
+      },
+      {
+        "id": "lagos-stack-4",
+        "name": "Ajah Stack",
+        "stackId": "LG-AJ-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 87,
+          "forecastStability": 90
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q3 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q4 2022", "ai": 690, "final": 700, "consumption": 695 },
+            { "name": "Q1 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q2 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q3 2023", "ai": 710, "final": 700, "consumption": 705 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 700, "final": 690, "previous": 680 },
+            { "name": "Q1 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q2 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q3 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q4 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q1 2025", "ai": 730, "final": 740, "previous": 730 }
+          ]
+        }
+      },
+      {
+        "id": "lagos-stack-5",
+        "name": "Surulere Stack",
+        "stackId": "LG-SR-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 85,
+          "forecastStability": 88
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q3 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q4 2022", "ai": 680, "final": 690, "consumption": 685 },
+            { "name": "Q1 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q2 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q3 2023", "ai": 700, "final": 690, "consumption": 695 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 690, "final": 680, "previous": 670 },
+            { "name": "Q1 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q2 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q3 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q4 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q1 2025", "ai": 720, "final": 730, "previous": 720 }
+          ]
+        }
+      },
+      {
+        "id": "lagos-stack-6",
+        "name": "Ikeja Stack",
+        "stackId": "LG-IJ-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 91,
+          "forecastStability": 94
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 720, "final": 740, "consumption": 730 },
+            { "name": "Q3 2022", "ai": 710, "final": 730, "consumption": 720 },
+            { "name": "Q4 2022", "ai": 730, "final": 740, "consumption": 735 },
+            { "name": "Q1 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q2 2023", "ai": 740, "final": 720, "consumption": 730 },
+            { "name": "Q3 2023", "ai": 750, "final": 740, "consumption": 745 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 740, "final": 730, "previous": 720 },
+            { "name": "Q1 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q2 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q3 2024", "ai": 750, "final": 760, "previous": 750 },
+            { "name": "Q4 2024", "ai": 760, "final": 770, "previous": 760 },
+            { "name": "Q1 2025", "ai": 770, "final": 780, "previous": 770 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "bangalore",
     "name": "Bangalore",
     "coords": [77.5946, 12.9716],
     "data": [60, 90, 55, 95, 50, 100],
-    "forecast": 72
+    "forecast": 72,
+    "stacks": [
+      {
+        "id": "bangalore-stack-1",
+        "name": "MG Road Stack",
+        "stackId": "BL-MG-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 90,
+          "forecastStability": 93
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q3 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q4 2022", "ai": 690, "final": 700, "consumption": 695 },
+            { "name": "Q1 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q2 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q3 2023", "ai": 710, "final": 700, "consumption": 705 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 700, "final": 690, "previous": 680 },
+            { "name": "Q1 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q2 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q3 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q4 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q1 2025", "ai": 730, "final": 740, "previous": 730 }
+          ]
+        }
+      },
+      {
+        "id": "bangalore-stack-2",
+        "name": "Indiranagar Stack",
+        "stackId": "BL-IN-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 88,
+          "forecastStability": 91
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q3 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q4 2022", "ai": 680, "final": 690, "consumption": 685 },
+            { "name": "Q1 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q2 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q3 2023", "ai": 700, "final": 690, "consumption": 695 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 690, "final": 680, "previous": 670 },
+            { "name": "Q1 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q2 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q3 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q4 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q1 2025", "ai": 720, "final": 730, "previous": 720 }
+          ]
+        }
+      },
+      {
+        "id": "bangalore-stack-3",
+        "name": "Koramangala Stack",
+        "stackId": "BL-KM-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 94,
+          "forecastStability": 97
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q3 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q4 2022", "ai": 700, "final": 710, "consumption": 705 },
+            { "name": "Q1 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q2 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q3 2023", "ai": 720, "final": 710, "consumption": 715 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 710, "final": 700, "previous": 690 },
+            { "name": "Q1 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q2 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q3 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q4 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q1 2025", "ai": 740, "final": 750, "previous": 740 }
+          ]
+        }
+      },
+      {
+        "id": "bangalore-stack-4",
+        "name": "Whitefield Stack",
+        "stackId": "BL-WF-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 89,
+          "forecastStability": 92
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q3 2022", "ai": 650, "final": 670, "consumption": 660 },
+            { "name": "Q4 2022", "ai": 670, "final": 680, "consumption": 675 },
+            { "name": "Q1 2023", "ai": 660, "final": 640, "consumption": 650 },
+            { "name": "Q2 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q3 2023", "ai": 690, "final": 680, "consumption": 685 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 680, "final": 670, "previous": 660 },
+            { "name": "Q1 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q2 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q3 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q4 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q1 2025", "ai": 710, "final": 720, "previous": 710 }
+          ]
+        }
+      },
+      {
+        "id": "bangalore-stack-5",
+        "name": "Electronic City Stack",
+        "stackId": "BL-EC-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 87,
+          "forecastStability": 90
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 650, "final": 670, "consumption": 660 },
+            { "name": "Q3 2022", "ai": 640, "final": 660, "consumption": 650 },
+            { "name": "Q4 2022", "ai": 660, "final": 670, "consumption": 665 },
+            { "name": "Q1 2023", "ai": 650, "final": 630, "consumption": 640 },
+            { "name": "Q2 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q3 2023", "ai": 680, "final": 670, "consumption": 675 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 670, "final": 660, "previous": 650 },
+            { "name": "Q1 2024", "ai": 660, "final": 670, "previous": 660 },
+            { "name": "Q2 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q3 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q4 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q1 2025", "ai": 700, "final": 710, "previous": 700 }
+          ]
+        }
+      },
+      {
+        "id": "bangalore-stack-6",
+        "name": "Marathahalli Stack",
+        "stackId": "BL-MH-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 93,
+          "forecastStability": 96
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q3 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q4 2022", "ai": 710, "final": 720, "consumption": 715 },
+            { "name": "Q1 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q2 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q3 2023", "ai": 730, "final": 720, "consumption": 725 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 720, "final": 710, "previous": 700 },
+            { "name": "Q1 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q2 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q3 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q4 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q1 2025", "ai": 750, "final": 760, "previous": 750 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "paris",
     "name": "Paris",
     "coords": [2.3522, 48.8566],
-    "data": [100, 140, 95, 150, 90, 160],
-    "forecast": 64
+    "data": [680, 750, 720, 780, 710, 800],
+    "forecast": 41,
+    "stacks": [
+      {
+        "id": "paris-stack-1",
+        "name": "Champs-Élysées Stack",
+        "stackId": "PR-CE-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 90,
+          "forecastStability": 93
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q3 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q4 2022", "ai": 690, "final": 700, "consumption": 695 },
+            { "name": "Q1 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q2 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q3 2023", "ai": 710, "final": 700, "consumption": 705 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 700, "final": 690, "previous": 680 },
+            { "name": "Q1 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q2 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q3 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q4 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q1 2025", "ai": 730, "final": 740, "previous": 730 }
+          ]
+        }
+      },
+      {
+        "id": "paris-stack-2",
+        "name": "Montmartre Stack",
+        "stackId": "PR-MM-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 88,
+          "forecastStability": 91
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q3 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q4 2022", "ai": 680, "final": 690, "consumption": 685 },
+            { "name": "Q1 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q2 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q3 2023", "ai": 700, "final": 690, "consumption": 695 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 690, "final": 680, "previous": 670 },
+            { "name": "Q1 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q2 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q3 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q4 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q1 2025", "ai": 720, "final": 730, "previous": 720 }
+          ]
+        }
+      },
+      {
+        "id": "paris-stack-3",
+        "name": "La Défense Stack",
+        "stackId": "PR-LD-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 94,
+          "forecastStability": 97
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q3 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q4 2022", "ai": 700, "final": 710, "consumption": 705 },
+            { "name": "Q1 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q2 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q3 2023", "ai": 720, "final": 710, "consumption": 715 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 710, "final": 700, "previous": 690 },
+            { "name": "Q1 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q2 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q3 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q4 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q1 2025", "ai": 740, "final": 750, "previous": 740 }
+          ]
+        }
+      },
+      {
+        "id": "paris-stack-4",
+        "name": "Le Marais Stack",
+        "stackId": "PR-LM-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 89,
+          "forecastStability": 92
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q3 2022", "ai": 650, "final": 670, "consumption": 660 },
+            { "name": "Q4 2022", "ai": 670, "final": 680, "consumption": 675 },
+            { "name": "Q1 2023", "ai": 660, "final": 640, "consumption": 650 },
+            { "name": "Q2 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q3 2023", "ai": 690, "final": 680, "consumption": 685 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 680, "final": 670, "previous": 660 },
+            { "name": "Q1 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q2 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q3 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q4 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q1 2025", "ai": 710, "final": 720, "previous": 710 }
+          ]
+        }
+      },
+      {
+        "id": "paris-stack-5",
+        "name": "Saint-Germain Stack",
+        "stackId": "PR-SG-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 87,
+          "forecastStability": 90
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 650, "final": 670, "consumption": 660 },
+            { "name": "Q3 2022", "ai": 640, "final": 660, "consumption": 650 },
+            { "name": "Q4 2022", "ai": 660, "final": 670, "consumption": 665 },
+            { "name": "Q1 2023", "ai": 650, "final": 630, "consumption": 640 },
+            { "name": "Q2 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q3 2023", "ai": 680, "final": 670, "consumption": 675 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 670, "final": 660, "previous": 650 },
+            { "name": "Q1 2024", "ai": 660, "final": 670, "previous": 660 },
+            { "name": "Q2 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q3 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q4 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q1 2025", "ai": 700, "final": 710, "previous": 700 }
+          ]
+        }
+      },
+      {
+        "id": "paris-stack-6",
+        "name": "Bastille Stack",
+        "stackId": "PR-BS-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 93,
+          "forecastStability": 96
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q3 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q4 2022", "ai": 710, "final": 720, "consumption": 715 },
+            { "name": "Q1 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q2 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q3 2023", "ai": 730, "final": 720, "consumption": 725 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 720, "final": 710, "previous": 700 },
+            { "name": "Q1 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q2 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q3 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q4 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q1 2025", "ai": 750, "final": 760, "previous": 750 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "sydney",
     "name": "Sydney",
     "coords": [151.2093, -33.8688],
-    "data": [300, 360, 290, 380, 280, 400],
-    "forecast": 75
+    "data": [690, 760, 730, 790, 720, 810],
+    "forecast": 40,
+    "stacks": [
+      {
+        "id": "sydney-stack-1",
+        "name": "CBD Stack",
+        "stackId": "SY-CB-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 91,
+          "forecastStability": 94
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q3 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q4 2022", "ai": 700, "final": 710, "consumption": 705 },
+            { "name": "Q1 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q2 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q3 2023", "ai": 720, "final": 710, "consumption": 715 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 710, "final": 700, "previous": 690 },
+            { "name": "Q1 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q2 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q3 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q4 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q1 2025", "ai": 740, "final": 750, "previous": 740 }
+          ]
+        }
+      },
+      {
+        "id": "sydney-stack-2",
+        "name": "Darling Harbour Stack",
+        "stackId": "SY-DH-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 89,
+          "forecastStability": 92
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q3 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q4 2022", "ai": 690, "final": 700, "consumption": 695 },
+            { "name": "Q1 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q2 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q3 2023", "ai": 710, "final": 700, "consumption": 705 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 700, "final": 690, "previous": 680 },
+            { "name": "Q1 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q2 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q3 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q4 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q1 2025", "ai": 730, "final": 740, "previous": 730 }
+          ]
+        }
+      },
+      {
+        "id": "sydney-stack-3",
+        "name": "Bondi Stack",
+        "stackId": "SY-BD-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 95,
+          "forecastStability": 98
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q3 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q4 2022", "ai": 710, "final": 720, "consumption": 715 },
+            { "name": "Q1 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q2 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q3 2023", "ai": 730, "final": 720, "consumption": 725 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 720, "final": 710, "previous": 700 },
+            { "name": "Q1 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q2 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q3 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q4 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q1 2025", "ai": 750, "final": 760, "previous": 750 }
+          ]
+        }
+      },
+      {
+        "id": "sydney-stack-4",
+        "name": "Manly Stack",
+        "stackId": "SY-ML-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 90,
+          "forecastStability": 93
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q3 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q4 2022", "ai": 680, "final": 690, "consumption": 685 },
+            { "name": "Q1 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q2 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q3 2023", "ai": 700, "final": 690, "consumption": 695 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 690, "final": 680, "previous": 670 },
+            { "name": "Q1 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q2 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q3 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q4 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q1 2025", "ai": 720, "final": 730, "previous": 720 }
+          ]
+        }
+      },
+      {
+        "id": "sydney-stack-5",
+        "name": "Parramatta Stack",
+        "stackId": "SY-PR-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 88,
+          "forecastStability": 91
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q3 2022", "ai": 650, "final": 670, "consumption": 660 },
+            { "name": "Q4 2022", "ai": 670, "final": 680, "consumption": 675 },
+            { "name": "Q1 2023", "ai": 660, "final": 640, "consumption": 650 },
+            { "name": "Q2 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q3 2023", "ai": 690, "final": 680, "consumption": 685 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 680, "final": 670, "previous": 660 },
+            { "name": "Q1 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q2 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q3 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q4 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q1 2025", "ai": 710, "final": 720, "previous": 710 }
+          ]
+        }
+      },
+      {
+        "id": "sydney-stack-6",
+        "name": "Chatswood Stack",
+        "stackId": "SY-CW-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 94,
+          "forecastStability": 97
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 710, "final": 730, "consumption": 720 },
+            { "name": "Q3 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q4 2022", "ai": 720, "final": 730, "consumption": 725 },
+            { "name": "Q1 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q2 2023", "ai": 730, "final": 710, "consumption": 720 },
+            { "name": "Q3 2023", "ai": 740, "final": 730, "consumption": 735 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 730, "final": 720, "previous": 710 },
+            { "name": "Q1 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q2 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q3 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q4 2024", "ai": 750, "final": 760, "previous": 750 },
+            { "name": "Q1 2025", "ai": 760, "final": 770, "previous": 760 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "toronto",
     "name": "Toronto",
     "coords": [-79.3832, 43.6532],
-    "data": [200, 250, 190, 270, 180, 290],
-    "forecast": 51
+    "data": [670, 740, 710, 770, 700, 790],
+    "forecast": 38,
+    "stacks": [
+      {
+        "id": "toronto-stack-1",
+        "name": "Downtown Stack",
+        "stackId": "TO-DT-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 92,
+          "forecastStability": 95
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q3 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q4 2022", "ai": 680, "final": 690, "consumption": 685 },
+            { "name": "Q1 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q2 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q3 2023", "ai": 700, "final": 690, "consumption": 695 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 690, "final": 680, "previous": 670 },
+            { "name": "Q1 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q2 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q3 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q4 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q1 2025", "ai": 720, "final": 730, "previous": 720 }
+          ]
+        }
+      },
+      {
+        "id": "toronto-stack-2",
+        "name": "Yorkville Stack",
+        "stackId": "TO-YV-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 90,
+          "forecastStability": 93
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q3 2022", "ai": 650, "final": 670, "consumption": 660 },
+            { "name": "Q4 2022", "ai": 670, "final": 680, "consumption": 675 },
+            { "name": "Q1 2023", "ai": 660, "final": 640, "consumption": 650 },
+            { "name": "Q2 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q3 2023", "ai": 690, "final": 680, "consumption": 685 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 680, "final": 670, "previous": 660 },
+            { "name": "Q1 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q2 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q3 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q4 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q1 2025", "ai": 710, "final": 720, "previous": 710 }
+          ]
+        }
+      },
+      {
+        "id": "toronto-stack-3",
+        "name": "Financial District Stack",
+        "stackId": "TO-FD-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 96,
+          "forecastStability": 99
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q3 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q4 2022", "ai": 700, "final": 710, "consumption": 705 },
+            { "name": "Q1 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q2 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q3 2023", "ai": 720, "final": 710, "consumption": 715 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 710, "final": 700, "previous": 690 },
+            { "name": "Q1 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q2 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q3 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q4 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q1 2025", "ai": 740, "final": 750, "previous": 740 }
+          ]
+        }
+      },
+      {
+        "id": "toronto-stack-4",
+        "name": "Entertainment District Stack",
+        "stackId": "TO-ED-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 91,
+          "forecastStability": 94
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 650, "final": 670, "consumption": 660 },
+            { "name": "Q3 2022", "ai": 640, "final": 660, "consumption": 650 },
+            { "name": "Q4 2022", "ai": 660, "final": 670, "consumption": 665 },
+            { "name": "Q1 2023", "ai": 650, "final": 630, "consumption": 640 },
+            { "name": "Q2 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q3 2023", "ai": 680, "final": 670, "consumption": 675 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 670, "final": 660, "previous": 650 },
+            { "name": "Q1 2024", "ai": 660, "final": 670, "previous": 660 },
+            { "name": "Q2 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q3 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q4 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q1 2025", "ai": 700, "final": 710, "previous": 700 }
+          ]
+        }
+      },
+      {
+        "id": "toronto-stack-5",
+        "name": "Distillery District Stack",
+        "stackId": "TO-DD-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 89,
+          "forecastStability": 92
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 640, "final": 660, "consumption": 650 },
+            { "name": "Q3 2022", "ai": 630, "final": 650, "consumption": 640 },
+            { "name": "Q4 2022", "ai": 650, "final": 660, "consumption": 655 },
+            { "name": "Q1 2023", "ai": 640, "final": 620, "consumption": 630 },
+            { "name": "Q2 2023", "ai": 660, "final": 640, "consumption": 650 },
+            { "name": "Q3 2023", "ai": 670, "final": 660, "consumption": 665 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 660, "final": 650, "previous": 640 },
+            { "name": "Q1 2024", "ai": 650, "final": 660, "previous": 650 },
+            { "name": "Q2 2024", "ai": 660, "final": 670, "previous": 660 },
+            { "name": "Q3 2024", "ai": 670, "final": 680, "previous": 670 },
+            { "name": "Q4 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q1 2025", "ai": 690, "final": 700, "previous": 690 }
+          ]
+        }
+      },
+      {
+        "id": "toronto-stack-6",
+        "name": "Harbourfront Stack",
+        "stackId": "TO-HF-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 95,
+          "forecastStability": 98
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q3 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q4 2022", "ai": 710, "final": 720, "consumption": 715 },
+            { "name": "Q1 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q2 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q3 2023", "ai": 730, "final": 720, "consumption": 725 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 720, "final": 710, "previous": 700 },
+            { "name": "Q1 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q2 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q3 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q4 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q1 2025", "ai": 750, "final": 760, "previous": 750 }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "shanghai",
     "name": "Shanghai",
     "coords": [121.4737, 31.2304],
-    "data": [800, 880, 790, 900, 780, 920],
-    "forecast": 88
+    "data": [700, 770, 740, 800, 730, 810],
+    "forecast": 39,
+    "stacks": [
+      {
+        "id": "shanghai-stack-1",
+        "name": "Pudong Stack",
+        "stackId": "SH-PD-2024-001",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": true,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 93,
+          "forecastStability": 96
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q3 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q4 2022", "ai": 710, "final": 720, "consumption": 715 },
+            { "name": "Q1 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q2 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q3 2023", "ai": 730, "final": 720, "consumption": 725 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 720, "final": 710, "previous": 700 },
+            { "name": "Q1 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q2 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q3 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q4 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q1 2025", "ai": 750, "final": 760, "previous": 750 }
+          ]
+        }
+      },
+      {
+        "id": "shanghai-stack-2",
+        "name": "Puxi Stack",
+        "stackId": "SH-PX-2024-002",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 91,
+          "forecastStability": 94
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 690, "final": 710, "consumption": 700 },
+            { "name": "Q3 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q4 2022", "ai": 700, "final": 710, "consumption": 705 },
+            { "name": "Q1 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q2 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q3 2023", "ai": 720, "final": 710, "consumption": 715 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 710, "final": 700, "previous": 690 },
+            { "name": "Q1 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q2 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q3 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q4 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q1 2025", "ai": 740, "final": 750, "previous": 740 }
+          ]
+        }
+      },
+      {
+        "id": "shanghai-stack-3",
+        "name": "Lujiazui Stack",
+        "stackId": "SH-LJ-2024-003",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 97,
+          "forecastStability": 100
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 720, "final": 740, "consumption": 730 },
+            { "name": "Q3 2022", "ai": 710, "final": 730, "consumption": 720 },
+            { "name": "Q4 2022", "ai": 730, "final": 740, "consumption": 735 },
+            { "name": "Q1 2023", "ai": 720, "final": 700, "consumption": 710 },
+            { "name": "Q2 2023", "ai": 740, "final": 720, "consumption": 730 },
+            { "name": "Q3 2023", "ai": 750, "final": 740, "consumption": 745 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 740, "final": 730, "previous": 720 },
+            { "name": "Q1 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q2 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q3 2024", "ai": 750, "final": 760, "previous": 750 },
+            { "name": "Q4 2024", "ai": 760, "final": 770, "previous": 760 },
+            { "name": "Q1 2025", "ai": 770, "final": 780, "previous": 770 }
+          ]
+        }
+      },
+      {
+        "id": "shanghai-stack-4",
+        "name": "Xintiandi Stack",
+        "stackId": "SH-XT-2024-004",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "BACKLOG",
+        "metrics": {
+          "forecastAccuracy": 92,
+          "forecastStability": 95
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 680, "final": 700, "consumption": 690 },
+            { "name": "Q3 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q4 2022", "ai": 690, "final": 700, "consumption": 695 },
+            { "name": "Q1 2023", "ai": 680, "final": 660, "consumption": 670 },
+            { "name": "Q2 2023", "ai": 700, "final": 680, "consumption": 690 },
+            { "name": "Q3 2023", "ai": 710, "final": 700, "consumption": 705 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 700, "final": 690, "previous": 680 },
+            { "name": "Q1 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q2 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q3 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q4 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q1 2025", "ai": 730, "final": 740, "previous": 730 }
+          ]
+        }
+      },
+      {
+        "id": "shanghai-stack-5",
+        "name": "Jing'an Stack",
+        "stackId": "SH-JA-2024-005",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "PENDING",
+        "metrics": {
+          "forecastAccuracy": 90,
+          "forecastStability": 93
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 670, "final": 690, "consumption": 680 },
+            { "name": "Q3 2022", "ai": 660, "final": 680, "consumption": 670 },
+            { "name": "Q4 2022", "ai": 680, "final": 690, "consumption": 685 },
+            { "name": "Q1 2023", "ai": 670, "final": 650, "consumption": 660 },
+            { "name": "Q2 2023", "ai": 690, "final": 670, "consumption": 680 },
+            { "name": "Q3 2023", "ai": 700, "final": 690, "consumption": 695 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 690, "final": 680, "previous": 670 },
+            { "name": "Q1 2024", "ai": 680, "final": 690, "previous": 680 },
+            { "name": "Q2 2024", "ai": 690, "final": 700, "previous": 690 },
+            { "name": "Q3 2024", "ai": 700, "final": 710, "previous": 700 },
+            { "name": "Q4 2024", "ai": 710, "final": 720, "previous": 710 },
+            { "name": "Q1 2025", "ai": 720, "final": 730, "previous": 720 }
+          ]
+        }
+      },
+      {
+        "id": "shanghai-stack-6",
+        "name": "Huangpu Stack",
+        "stackId": "SH-HP-2024-006",
+        "tags": ["F'CAST STAB.", "F'CAST ACC."],
+        "selected": false,
+        "status": "FINAL SIGN-OFF",
+        "metrics": {
+          "forecastAccuracy": 96,
+          "forecastStability": 99
+        },
+        "chartData": {
+          "historical": [
+            { "name": "Q2 2022", "ai": 710, "final": 730, "consumption": 720 },
+            { "name": "Q3 2022", "ai": 700, "final": 720, "consumption": 710 },
+            { "name": "Q4 2022", "ai": 720, "final": 730, "consumption": 725 },
+            { "name": "Q1 2023", "ai": 710, "final": 690, "consumption": 700 },
+            { "name": "Q2 2023", "ai": 730, "final": 710, "consumption": 720 },
+            { "name": "Q3 2023", "ai": 740, "final": 730, "consumption": 735 }
+          ],
+          "forecast": [
+            { "name": "Q4 2023", "ai": 730, "final": 720, "previous": 710 },
+            { "name": "Q1 2024", "ai": 720, "final": 730, "previous": 720 },
+            { "name": "Q2 2024", "ai": 730, "final": 740, "previous": 730 },
+            { "name": "Q3 2024", "ai": 740, "final": 750, "previous": 740 },
+            { "name": "Q4 2024", "ai": 750, "final": 760, "previous": 750 },
+            { "name": "Q1 2025", "ai": 760, "final": 770, "previous": 760 }
+          ]
+        }
+      }
+    ]
   }
 ]

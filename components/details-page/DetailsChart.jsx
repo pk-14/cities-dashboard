@@ -8,25 +8,20 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  Legend,
 } from "recharts";
 import { useState, useRef, useEffect } from "react";
 
 const DetailsChart = ({ chartData }) => {
-  // Use provided data structure
   const historicalData = chartData?.historical || [];
-  // Add a dummy point to the start of forecastData to create a gap
   const forecastData = [
     { name: "", ai: null, final: null, previous: null },
     ...(chartData?.forecast || []),
   ];
 
-  // Only two toggles for left chart
   const [showAI, setShowAI] = useState(true);
   const [showFinal, setShowFinal] = useState(true);
   const [showConsumption, setShowConsumption] = useState(true);
 
-  // Custom tooltip for both charts
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
@@ -57,39 +52,33 @@ const DetailsChart = ({ chartData }) => {
     return null;
   };
 
-  // For vertical divider, use ref to get container height
   const chartContainerRef = useRef(null);
   const [dividerHeight, setDividerHeight] = useState(0);
   useEffect(() => {
     if (chartContainerRef.current) {
-      setDividerHeight(chartContainerRef.current.offsetHeight - 100);
+      setDividerHeight(chartContainerRef.current.offsetHeight - 30);
     }
   }, []);
 
-  // Calculate Y axis domain for both charts
   const allYValues = [
     ...historicalData.flatMap((d) => [d.ai, d.final, d.consumption]),
     ...forecastData.flatMap((d) => [d.ai, d.final, d.previous]),
   ];
-  const minY = Math.min(...allYValues, 0);
+
   const maxY = Math.max(...allYValues, 1000);
   const yAxisDomain = [0, Math.ceil(maxY / 100) * 100];
 
   return (
     <div className="flex-1 pt-2 pb-2">
       <div className="bg-black p-4 h-[calc(100vh-16rem)] shadow flex flex-col">
-        {/* Chart area */}
         <div className="flex-1 relative flex" ref={chartContainerRef}>
-          {/* Left (Historical) Chart */}
           <div className="flex-1 flex flex-col">
             <div className="flex items-center justify-end gap-2 mb-1">
               <span className="text-[#bcbcbc] text-xs font-medium tracking-wide mr-2">
                 HISTORICAL
               </span>
             </div>
-            {/* Switches below heading */}
             <div className="flex gap-6 mb-2 items-center">
-              {/* AI Forecast Toggle */}
               <label className="flex items-center gap-2 cursor-pointer select-none">
                 <input
                   type="checkbox"
@@ -120,7 +109,6 @@ const DetailsChart = ({ chartData }) => {
                   AI FORECAST
                 </span>
               </label>
-              {/* Final Forecast Toggle */}
               <label className="flex items-center gap-2 cursor-pointer select-none">
                 <input
                   type="checkbox"
@@ -151,7 +139,6 @@ const DetailsChart = ({ chartData }) => {
                   FINAL FORECAST
                 </span>
               </label>
-              {/* Consumption Toggle */}
               <label className="flex items-center gap-2 cursor-pointer select-none">
                 <input
                   type="checkbox"
@@ -245,12 +232,11 @@ const DetailsChart = ({ chartData }) => {
               </LineChart>
             </ResponsiveContainer>
           </div>
-          {/* Vertical dotted divider */}
           <div
             style={{
               position: "absolute",
-              left: "54%",
-              top: 60,
+              left: "50%",
+              top: 0,
               height: dividerHeight,
               width: 0,
               borderLeft: "2px dotted #bcbcbc",
@@ -259,7 +245,6 @@ const DetailsChart = ({ chartData }) => {
               pointerEvents: "none",
             }}
           />
-          {/* Right (Forecast) Chart */}
           <div className="flex-1 flex flex-col">
             <div className="flex flex-col">
               <div className="flex items-center justify-start gap-2 mb-1">
@@ -267,9 +252,7 @@ const DetailsChart = ({ chartData }) => {
                   FORECAST
                 </span>
               </div>
-              {/* Custom Legend aligned with left chart's switches */}
               <div className="flex gap-6 mb-2 items-center pl-2">
-                {/* AI Forecast Legend */}
                 <div className="flex items-center gap-2">
                   <svg width="24" height="8">
                     <line
@@ -286,7 +269,7 @@ const DetailsChart = ({ chartData }) => {
                     AI Forecast
                   </span>
                 </div>
-                {/* Final Forecast Legend */}
+
                 <div className="flex items-center gap-2">
                   <svg width="24" height="8">
                     <line
@@ -303,7 +286,6 @@ const DetailsChart = ({ chartData }) => {
                     Final Forecast
                   </span>
                 </div>
-                {/* Consumption Forecast Legend */}
                 <div className="flex items-center gap-2">
                   <svg width="24" height="8">
                     <line
@@ -340,10 +322,9 @@ const DetailsChart = ({ chartData }) => {
                   axisLine={true}
                   tickLine={true}
                   hide={false}
+                  padding={{ right: 30 }}
                 />
-                {/* No YAxis here */}
                 <Tooltip content={<CustomTooltip />} />
-                {/* Remove built-in Legend */}
                 <Line
                   type="monotone"
                   dataKey="ai"
