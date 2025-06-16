@@ -70,8 +70,11 @@ const DetailsChart = ({ chartData }) => {
 
   return (
     <div className="flex-1 pt-2 pb-2">
-      <div className="bg-black p-4 h-[calc(100vh-16rem)] shadow flex flex-col">
-        <div className="flex-1 relative flex" ref={chartContainerRef}>
+      <div className="bg-black p-4 md:h-[calc(100vh-16rem)] sm:h-[calc(90vh-10rem)] shadow flex flex-col">
+        <div
+          className="flex-1 relative flex md:flex-row flex-col"
+          ref={chartContainerRef}
+        >
           <div className="flex-1 flex flex-col">
             <div className="flex items-center justify-end gap-2 mb-1">
               <span className="text-[#bcbcbc] text-xs font-medium tracking-wide mr-2">

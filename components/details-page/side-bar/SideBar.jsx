@@ -41,13 +41,13 @@ const SideBar = ({ sidebarOpen, onItemSelect, cityData }) => {
   return (
     <div
       className={`transition-all duration-300 bg-[#0f2a35] border-r border-gray-700 overflow-y-auto ${
-        sidebarOpen ? "w-80" : "w-12"
+        sidebarOpen ? "lg:w-80 md:w-30" : "ld:w-12 md:w-12"
       }`}
     >
       {sidebarOpen && (
         <>
           <header className="p-4 flex items-center justify-between">
-            <div className="flex items-center gap-4">
+            <div className="flex md:flex-col lg:flex-row items-center gap-4">
               <button
                 onClick={() => router.push("/")}
                 className="px-3 py-1 rounded text-sm cursor-pointer"
@@ -59,8 +59,8 @@ const SideBar = ({ sidebarOpen, onItemSelect, cityData }) => {
           </header>
 
           <div className="p-2">
-            <div className="flex justify-between items-center mb-2 border-b border-gray-600">
-              <div className="flex gap-4 uppercase mt-2">
+            <div className="flex justify-between items-center mb-2 border-b border-gray-600 md:border-none lg:border-solid">
+              <div className="flex md:flex-col lg:flex-row gap-4 uppercase mt-2">
                 {statusTabs.map((tab) => (
                   <button
                     key={tab}
@@ -124,7 +124,7 @@ const SideBar = ({ sidebarOpen, onItemSelect, cityData }) => {
                   <div>{item.name}</div>
                 </div>
                 <Mail
-                  className="absolute top-2 right-2 w-4 h-4 text-cyan-400 hover:text-cyan-300"
+                  className="absolute top-2 right-2 w-4 h-4 text-cyan-400 hover:text-cyan-300 md:hidden"
                   title="Send Email"
                 />
               </div>

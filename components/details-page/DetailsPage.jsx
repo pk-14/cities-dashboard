@@ -47,8 +47,9 @@ const DetailsPage = () => {
         />
         <button
           onClick={() => setSidebarOpen((prev) => !prev)}
-          className="absolute top-4 left-80 z-20 bg-cyan-400 p-1 shadow transition-all duration-300 hover:bg-cyan-200 cursor-pointer text-black"
-          style={{ left: sidebarOpen ? "20rem" : "3rem" }}
+          className={`absolute top-4 z-20 bg-cyan-400 p-1 shadow transition-all duration-300 hover:bg-cyan-200 cursor-pointer text-black ${
+            sidebarOpen ? "lg:left-80 md:left-28" : "lg:left-12 md:left-12"
+          } sm:hidden md:block`}
           title={sidebarOpen ? "Collapse" : "Expand"}
         >
           {sidebarOpen ? <ChevronLeft /> : <ChevronRight />}
