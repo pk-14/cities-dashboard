@@ -19,20 +19,20 @@
         },
         "chartData": {
           "historical": [
-            { "name": "Q2 2022", "ai": 120, "final": 130, "consumption": 125 },
-            { "name": "Q3 2022", "ai": 115, "final": 125, "consumption": 120 },
-            { "name": "Q4 2022", "ai": 125, "final": 130, "consumption": 128 },
-            { "name": "Q1 2023", "ai": 120, "final": 110, "consumption": 115 },
-            { "name": "Q2 2023", "ai": 130, "final": 120, "consumption": 125 },
-            { "name": "Q3 2023", "ai": 135, "final": 130, "consumption": 132 }
+            { "name": "Q2 2022", "ai": 220, "final": 430, "consumption": 125 },
+            { "name": "Q3 2022", "ai": 315, "final": 225, "consumption": 120 },
+            { "name": "Q4 2022", "ai": 525, "final": 630, "consumption": 128 },
+            { "name": "Q1 2023", "ai": 220, "final": 110, "consumption": 115 },
+            { "name": "Q2 2023", "ai": 130, "final": 420, "consumption": 125 },
+            { "name": "Q3 2023", "ai": 35, "final": 330, "consumption": 132 }
           ],
           "forecast": [
-            { "name": "Q4 2023", "ai": 130, "final": 125, "previous": 120 },
-            { "name": "Q1 2024", "ai": 125, "final": 130, "previous": 125 },
-            { "name": "Q2 2024", "ai": 130, "final": 135, "previous": 130 },
-            { "name": "Q3 2024", "ai": 135, "final": 140, "previous": 135 },
-            { "name": "Q4 2024", "ai": 140, "final": 145, "previous": 140 },
-            { "name": "Q1 2025", "ai": 145, "final": 150, "previous": 145 }
+            { "name": "Q4 2023", "ai": 630, "final": 225, "previous": 120 },
+            { "name": "Q1 2024", "ai": 325, "final": 630, "previous": 125 },
+            { "name": "Q2 2024", "ai": 930, "final": 335, "previous": 130 },
+            { "name": "Q3 2024", "ai": 235, "final": 140, "previous": 135 },
+            { "name": "Q4 2024", "ai": 440, "final": 745, "previous": 140 },
+            { "name": "Q1 2025", "ai": 145, "final": 250, "previous": 145 }
           ]
         }
       },
@@ -50,19 +50,19 @@
         "chartData": {
           "historical": [
             { "name": "Q2 2022", "ai": 110, "final": 120, "consumption": 115 },
-            { "name": "Q3 2022", "ai": 105, "final": 115, "consumption": 110 },
-            { "name": "Q4 2022", "ai": 115, "final": 120, "consumption": 118 },
-            { "name": "Q1 2023", "ai": 110, "final": 100, "consumption": 105 },
-            { "name": "Q2 2023", "ai": 120, "final": 110, "consumption": 115 },
-            { "name": "Q3 2023", "ai": 125, "final": 120, "consumption": 122 }
+            { "name": "Q3 2022", "ai": 105, "final": 215, "consumption": 110 },
+            { "name": "Q4 2022", "ai": 115, "final": 320, "consumption": 118 },
+            { "name": "Q1 2023", "ai": 110, "final": 420, "consumption": 105 },
+            { "name": "Q2 2023", "ai": 220, "final": 110, "consumption": 115 },
+            { "name": "Q3 2023", "ai": 325, "final": 120, "consumption": 122 }
           ],
           "forecast": [
             { "name": "Q4 2023", "ai": 120, "final": 115, "previous": 110 },
             { "name": "Q1 2024", "ai": 115, "final": 120, "previous": 115 },
-            { "name": "Q2 2024", "ai": 120, "final": 125, "previous": 120 },
-            { "name": "Q3 2024", "ai": 125, "final": 130, "previous": 125 },
-            { "name": "Q4 2024", "ai": 130, "final": 135, "previous": 130 },
-            { "name": "Q1 2025", "ai": 135, "final": 140, "previous": 135 }
+            { "name": "Q2 2024", "ai": 420, "final": 525, "previous": 420 },
+            { "name": "Q3 2024", "ai": 325, "final": 130, "previous": 825 },
+            { "name": "Q4 2024", "ai": 130, "final": 235, "previous": 130 },
+            { "name": "Q1 2025", "ai": 735, "final": 140, "previous": 235 }
           ]
         }
       },

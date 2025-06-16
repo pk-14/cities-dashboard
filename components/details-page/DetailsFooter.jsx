@@ -29,7 +29,7 @@ const DetailsFooter = ({ chartData }) => {
       <table className="min-w-full text-left text-sm text-white">
         <thead>
           <tr className="border-b border-[#22313a]">
-            <th className="py-2 pr-6 font-medium">Metric</th>
+            <th className="py-2 pr-6 font-medium">Quater</th>
             {allQuarters.map((quarter, idx) => (
               <th key={idx} className="py-2 px-4 text-right font-medium">
                 {quarter.name}
@@ -41,9 +41,11 @@ const DetailsFooter = ({ chartData }) => {
           {tableData.map((row, idx) => (
             <tr
               key={idx}
-              className={`border-b border-[#22313a] last:border-b-0 ${row.color}`}
+              className={`border-b border-[#22313a] last:border-b-0`}
             >
-              <td className="py-2 pr-6 font-medium whitespace-nowrap">
+              <td
+                className={`py-2 pr-6 font-medium whitespace-nowrap ${row.color}`}
+              >
                 {row.label}
               </td>
               {row.values.map((val, i) => (

@@ -3,9 +3,10 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Filter, Mail } from "lucide-react";
+import sideBarConfig from "../../../configurations/sideBarConfig.json";
 
 const SideBar = ({ sidebarOpen, onItemSelect, cityData }) => {
-  const statusTabs = ["BACKLOG", "PENDING", "FINAL SIGN-OFF"];
+  const statusTabs = sideBarConfig.statusTabs;
   const router = useRouter();
   const [selectedTab, setSelectedTab] = useState("BACKLOG");
   const [selectedIds, setSelectedIds] = useState([]);

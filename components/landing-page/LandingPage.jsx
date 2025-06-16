@@ -1,6 +1,6 @@
 import React from "react";
-import MapChart from "./MapChart";
-import WidgetContainer from "./WidgetContainer";
+import MapChart from "./map-chart/MapChart";
+import WidgetContainer from "./city-widget/WidgetContainer";
 
 const LandingPage = () => {
   return (

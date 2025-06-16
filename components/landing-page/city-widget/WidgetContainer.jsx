@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import widgetConfig from "../../configurations/widgetConfig.json";
-import cityData from "../../mock-data/cityData.json";
+import widgetConfig from "../../../configurations/widgetConfig.json";
+import cityData from "../../../mock-data/cityData.json";
 import CityWidget from "./CityWidget";
 
 const WidgetContainer = () => {

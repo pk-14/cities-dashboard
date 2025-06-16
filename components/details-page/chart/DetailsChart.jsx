@@ -12,15 +12,17 @@ import {
 import { useState, useRef, useEffect } from "react";
 
 const DetailsChart = ({ chartData }) => {
+  const [showAI, setShowAI] = useState(true);
+  const [showFinal, setShowFinal] = useState(true);
+  const [showConsumption, setShowConsumption] = useState(true);
+  const chartContainerRef = useRef(null);
+  const [dividerHeight, setDividerHeight] = useState(0);
+
   const historicalData = chartData?.historical || [];
   const forecastData = [
     { name: "", ai: null, final: null, previous: null },
     ...(chartData?.forecast || []),
   ];
-
-  const [showAI, setShowAI] = useState(true);
-  const [showFinal, setShowFinal] = useState(true);
-  const [showConsumption, setShowConsumption] = useState(true);
 
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
@@ -52,8 +54,6 @@ const DetailsChart = ({ chartData }) => {
     return null;
   };
 
-  const chartContainerRef = useRef(null);
-  const [dividerHeight, setDividerHeight] = useState(0);
   useEffect(() => {
     if (chartContainerRef.current) {
       setDividerHeight(chartContainerRef.current.offsetHeight - 30);

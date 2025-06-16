@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import DetailsChart from "./DetailsChart";
-import SideBar from "./SideBar";
+import DetailsChart from "./chart/DetailsChart";
+import SideBar from "./side-bar/SideBar";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import DetailsHeader from "./DetailsHeader";
 import DetailsFooter from "./DetailsFooter";
