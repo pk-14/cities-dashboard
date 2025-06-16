@@ -4,6 +4,8 @@
 
 This project is a dashboard for inventory management of a commodities-based multinational corporation (MNC). The dashboard provides sales data for both historical and forecast periods, using mock data for demonstration purposes. The frontend is designed to be dynamic, interactive, and responsive, closely following a provided design specification.
 
+Hosted Link: https://inventory-management-dashboard-npk.vercel.app/
+
 ---
 
 ## Features
