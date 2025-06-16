@@ -1,6 +1,6 @@
 # Inventory Management Dashboard
 
-## About Assignment
+## About
 
 This project is a dashboard for inventory management of a commodities-based multinational corporation (MNC). The dashboard provides sales data for both historical and forecast periods, using mock data for demonstration purposes. The frontend is designed to be dynamic, interactive, and responsive, closely following a provided design specification.
 
@@ -9,6 +9,9 @@ This project is a dashboard for inventory management of a commodities-based mult
 ## Features
 
 ### Landing Page
+
+![image](https://github.com/user-attachments/assets/343d90df-12ab-4922-866b-7a7fe41b4757)
+
 
 - **Dynamic World Map:**
   - Interactive map background with zoom along with scroll capabilities.
@@ -23,6 +26,9 @@ This project is a dashboard for inventory management of a commodities-based mult
   - Clicking a widget navigates to the details page for that city.
 
 ### Details Page
+
+![image](https://github.com/user-attachments/assets/41ab69a8-d486-43bf-8b06-872a470e72fc)
+
 
 - **Sidebar Section:**
   - Sidebar contains stack cards populated with mock data.
